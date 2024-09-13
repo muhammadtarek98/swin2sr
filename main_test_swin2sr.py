@@ -21,6 +21,9 @@ def main():
     parser.add_argument('--training_patch_size', type=int, default=128, help='patch size used in training Swin2SR. '
                                        'Just used to differentiate two different settings in Table 2 of the paper. '
                                        'Images are NOT tested patch by patch.')
+    parser.add_argument('--image_dir', action='store_true',default="/home/muahmmad/projects/Image_enhancement/dataset/Enhancement_Dataset/7117_no_fish_2_f000000.jpg",
+                        help='use large model, only provided for real image sr')
+
     parser.add_argument('--large_model', action='store_true', help='use large model, only provided for real image sr')
     parser.add_argument('--model_path', type=str,
                         default='model_zoo/swin2sr/Swin2SR_ClassicalSR_X2_64.pth')
