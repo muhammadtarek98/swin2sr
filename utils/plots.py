@@ -5,8 +5,6 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-
-
 def load_img (filename, debug=False, norm=True, resize=None):
     img = cv2.imread(filename)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
