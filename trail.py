@@ -54,3 +54,4 @@ output_image=tensor_2_img(tensor=prediction)
 cv2.imshow(winname="test",mat=output_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
